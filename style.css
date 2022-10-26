@@ -15,9 +15,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     
 }
 section {
-    flex: 1;
+    flex: 1 0 auto;
     width: 100%
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-items: center;
+    background-color: var(--darkColor);
+}
+#logo {
+    color: var(--mainText);
+    margin: 1rem;
+    
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+@media (max-width: 600px) {
+    header {
+        justify-content: space-around;
+    }
 }
