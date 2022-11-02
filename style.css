@@ -150,13 +150,14 @@ header {
 }
 .call-to-act .banner {
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
     margin: 0 1rem;
     border-radius: 1rem;
     gap: 2rem;
     background-color: var(--buttonColor);
     color: var(--secondaryText);
-    width: 40rem;
+    width: 50rem;
+    height: 5rem;
     flex: 0 1 auto;
     justify-content: space-around;
     align-items: center;
