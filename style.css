@@ -1,6 +1,4 @@
-* {
-    outline: 1px dotted lightblue;
-}
+
 :root {
     --darkColor: #1f2937;
     --mainText: #f9faf8;
@@ -68,8 +66,8 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 1.5rem;
-    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
     
 }
 .hero-image {
@@ -77,6 +75,7 @@ header {
     flex: 0 1 auto;
     align-items: center;
     justify-content: space-around;
+    margin: 0 1rem;
     
 }
 .placeholder-image {
@@ -87,6 +86,13 @@ header {
 }
 .hero-text {
     flex: 0 1 500px;
+    margin-left: 1rem;
+}
+.hero input[type="button"]{
+    border: none;
+}
+.gallery h2{
+    margin-top: 2rem;
 }
 .gallery{
     display: flex;
@@ -114,6 +120,7 @@ header {
     height: 150px;
     border: 5px solid var(--buttonColor);
     border-radius: 1rem;
+    margin-bottom: .6rem;
 }
 .card-text{
     flex: 1;
@@ -123,15 +130,23 @@ header {
     
 }
 .cite p{
-    font-size: 36px;
+    font-size: 30px;
     font-style: italic;
-    font-weight: 200;
-    padding: 0 3rem;
+    font-weight: 100;
+    padding: 4rem 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.cite-author{
+    font-weight:bold;
+    display: block;
+    text-align: end;
+    margin-top: 1rem;
 }
 .call-to-act {
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 .call-to-act .banner {
     display: flex;
@@ -144,17 +159,75 @@ header {
     width: 40rem;
     flex: 0 1 auto;
     justify-content: space-around;
+    align-items: center;
    
 }
+.call-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.call-container p, .call-container h3{
+    margin:0;
+}
+footer{
+    background-color: var(--darkColor);
+    color: var(--mainText);
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-family: Helvetica, sans-serif;
+}
+input[value="Sign-up"]{
+    background-color: var(--buttonColor);
+    color: var(--mainText);
+    height: 3rem;
+    padding: 0 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+input[value="Sign-up"]:hover{
+    color: var(--buttonColor);
+    background-color: var(--mainText);
+}
+@media (max-width: 864px){
+    .hero-image{
+        padding: 2rem 0 1rem 0;
+    }
+}
 @media (max-width: 768px){
+
     header{
         position: fixed;
     }
+    #logo{
+        font-size: 15px;
+        justify-self: center;
+        margin-left: 0;
+        
+    }
+    #navbar li{
+        text-align: center;
+        padding: .3rem;
+        
+    }
+    #navbar li:hover{
+        background-color: var(--buttonColor);
+        color: black; 
+    }
     .hero{
-        padding-top: 5rem;
+        padding-top: 10rem;
+    }
+    .hero-text{
+        padding: 0 1rem;
+        text-align: center;
     }
     .hero-image{
         padding: 2rem 0 1rem 0;
+    }
+    .cite p{
+        font-size: 1.5rem;
     }
     
 }
